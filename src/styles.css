@@ -14,7 +14,6 @@
 
 :root{
 
-    --header-height: 40px;
 
     /*========== Font and typography ==========*/
     --body-font:'Inter-regular';
@@ -90,87 +89,6 @@ img {
     height: auto;
 }
 
-.white-nav{
-    --olive-color:white; 
-    --light-olive-color:#e4c87f;
-    --white-color: #101010;
-    --svg-color: #5d750f;
-}
-
-/*========== HEADER & NAV ==========*/
-
-.test{
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    background: var(--olive-color);
-    z-index: var(--z-fixed);
-}
-
-
-.nav{
-    height: 8.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--olive-color);
-    width: initial;
-    margin-inline: 110px;
-    overflow: hidden;
-}
-.nav__link{
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* 
-.nav__list{
-    color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    gap: 2rem 3rem;
-    font-weight: 400;
-    line-height: 17px;
-    font-size: var(--small-font-size);
-}
-*/
-.nav__link{
-    color: var(--white-color);
-} 
-
-.nav__logo{
-    color: var(--white-color);
-    font-size: var(--h3-font-size);
-    font-family: var(--title-font);
-}
-
-.nav__logo a{
-    color: var(--white-color);
-    font-size: var(--h3-font-size);
-    font-family: var(--title-font);
-    float: none;
-}
-
-
-.touch__button{
-    font-family: 'Satoshi';
-    font-weight: 700;
-    height: 40px;
-    border-radius: 12px;
-    padding-inline: 12.5px;
-    background-color: var(--light-olive-color);
-    font-size: 14px;
-    line-height: 110%;
-    border: none;
-    color: var(--white-color);
-    cursor: pointer;
-    
-}
 
 .caret {
     display: inline-block;
@@ -182,6 +100,35 @@ img {
     border-top: 4px solid\9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
+}
+
+.white-nav{
+    --olive-color:white; 
+    --light-olive-color:#e4c87f;
+    --white-color: #101010;
+    --svg-color: #5d750f;
+}
+
+/*========== HEADER & NAV ==========*/
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background: var(--olive-color);
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    height: 8.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--olive-color);
+    width: initial;
+    margin-inline: 110px;
+    overflow: hidden;
 }
 
 .dropdown{
@@ -258,11 +205,55 @@ img {
     display: flex;
     column-gap: 1rem;
   }
+  
+
+.nav__link{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.nav__logo{
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+}
+
+.nav__logo svg path {
+    fill: var(--svg-color);
+}
+
+.nav__logo a{
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--title-font);
+    float: none;
+}
+
+.touch__button{
+    font-family: 'Satoshi';
+    font-weight: 700;
+    height: 40px;
+    border-radius: 12px;
+    padding-inline: 12.5px;
+    background-color: var(--light-olive-color);
+    font-size: 14px;
+    line-height: 110%;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    
+}
+
 
 
  
 
-/*========= Top Section ========*/
+/*========= hero Section ========*/
 
 .green__background{
     top: 0;
@@ -274,15 +265,15 @@ img {
     height: 867px;
 }
 
-.top__section{
+.hero__section{
     color: var(--white-color);
 }
-.top__text{
+.hero__text{
     margin-left: 116px;
     width: 576px;
 }
 
-.top__title{
+.hero__title{
     
     font-family: 'Satoshi';
     font-style: normal;
@@ -293,7 +284,7 @@ img {
     margin-bottom: 24px;
 }
 
-.top__subtitle{
+.hero__subtitle{
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -301,7 +292,7 @@ img {
     margin-bottom: 3rem;
 }
 
-.top__container{
+.hero__container{
     margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -309,16 +300,16 @@ img {
     column-gap: 5rem;
 }
 
-.top__img{
+.hero__img{
     border-radius: 2rem;
     height: 603px;
     width: 585px;
 }
 
 
-/*========= Main Section ========*/
+/*========= Services Section ========*/
 
-.main__info{
+.services__info{
     width: 780px;
     margin: auto;
 }
@@ -333,7 +324,7 @@ img {
     text-align: center;
 }
 
-.main__title{
+.services__title{
     color: var(--black-color);
     font-family: 'Satoshi';
     font-style: normal;
@@ -345,7 +336,7 @@ img {
     margin-bottom: 16px;
 }
 
-.main__subtitle{
+.services__subtitle{
     color: var(--dark-grey-color);
     font-family:var(--body-font);
     font-style: normal;
@@ -355,7 +346,7 @@ img {
     text-align: center;
 }
 
-.main__container{
+.services__container{
     margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -377,12 +368,12 @@ img {
     height: 430px;
 }
 
-.main__container-top{
+.services__container-top{
     display: flex;
     align-items: center;
 }
 
-.main__container-logo{
+.services__container-logo{
     background: var(--olive-color);
     border-radius: 16px;
     width: 64px;
@@ -391,7 +382,7 @@ img {
 }
 
 
-.main__container-title{
+.services__container-title{
     color: var(--black-color);
     font-family: 'Satoshi';
     font-style: normal;
@@ -400,7 +391,7 @@ img {
     line-height: 110%;
 }
 
-.main__container-text{
+.services__container-text{
     width: 585px;
     color: var(--dark-grey-color);
     font-style: normal;
@@ -409,7 +400,7 @@ img {
     line-height: 150%;
 }
 
-.main__container-button{
+.services__container-button{
     height: 50px;
     width: 212px;
     border-radius: 12px;
@@ -424,9 +415,9 @@ img {
 
 
 
-/*========= caroussel Section ========*/
+/*========= testimonial Section ========*/
 
-.caroussel__section{
+.testimonial__section{
     background: var(--black-color);
     width: 100%;
     height: 597px;
@@ -440,11 +431,11 @@ img {
     justify-content: center;
     column-gap: 100px;
 }
-.caroussel__text{
+.testimonial__text{
     width: auto;
     margin-top: 100px;
 }
-.caroussel__title{
+.testimonial__title{
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -453,7 +444,7 @@ img {
     color: var(--white-color);
     width: 520px;
 }
-.caroussel__subtitle{
+.testimonial__subtitle{
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
@@ -461,14 +452,14 @@ img {
     color: var(--white-color);
     width: 584px;
 }
-.caroussel__picture img{
+.testimonial__picture img{
     margin-top: 100px;
     height: 270px;
     width: 300px;
     border-radius: .5rem;
 }
 
-.caroussel__picture-title{
+.testimonial__picture-title{
     margin-top: 65px;
     font-family: 'Satoshi';
     font-weight: 700;
@@ -477,7 +468,7 @@ img {
     color: var(--white-color);
 }
 
-.caroussel__picture-subtitle{
+.testimonial__picture-subtitle{
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -616,3 +607,4 @@ img {
     font-size: 20px;
     line-height: 120%;
 }
+
