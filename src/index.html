@@ -8,6 +8,361 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <!--========== HEADER ==========-->
+  <div class="test"id="myNavbar" >
+
+    <nav class="nav" >
+
+      <div class="nav__menu">
+        <div class="nav__item dropdown">
+          <button class="dropbtn" onclick="myFunction()">Services <span class="caret"></span></button>
+          <div class="dropdown__content" id="myDropdown">
+            <div class="nav__content-text">
+              <div class="nav__content-title">
+                <div class="nav__content-logo"></div>
+                <a href="#">Full property management system</a>
+              </div>
+              <p> Fully customisable guest journeys, dynamic pricing, task management geared to fit your needs. </p>
+            </div>
+            <div class="nav__content-text">
+              <div class="nav__content-title">
+                <div class="nav__content-logo"></div>
+              <a href="#">White label branding</a>
+              </div>
+              <p>Your own branded website fully integrated with a payment engine and channel manager.</p>
+            </div>
+            <div class="nav__content-text">
+              <div class="nav__content-title">
+                <div class="nav__content-logo"></div>
+              <a href="#">Dedicated Support Team & Expert Advice</a>
+              </div>
+              <p>A specialised team available to support your journey from the beginning and throughout. </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="nav__link">Pricing</a>
+        
+        <div class="nav__item dropdown">
+          <button class="dropbtn" onclick="myFunction()">Company <span class="caret"></span></button>
+          <div class="dropdown__content" id="myDropdown">
+            <a href="#">Full property management system</a>
+            <a href="#">Full property management system</a>
+            <a href="#">Full property management system</a>
+          </div>
+        </div>
+      </div>
+        
+      <div class="nav__logo">
+        <svg id="white-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+          <path d="M20.9635 2.52161L20.9631 2.52208L17.8098 5.66169L14.6907 2.55478L14.6903 2.55438L14.689 2.55316L14.689 2.55315C12.2858 0.219311 8.17924 0.500042 6.14081 3.15832L2.10242 8.15791L2.10241 8.1579L2.10168 8.15886L2.1006 8.16027C1.35633 9.13174 0.953145 10.32 0.953145 11.5421V15.7244C0.953145 18.8033 3.45889 21.2987 6.54919 21.2987H13.6436C15.1503 21.2987 16.3711 22.5153 16.3711 24.0152V28.9684C16.3711 30.4684 15.1503 31.6849 13.6436 31.6849H6.54919C5.04249 31.6849 3.82162 30.4684 3.82162 28.9684V23.3365V23.3028L3.78965 23.2921L3.69503 23.2604C2.79159 22.9577 1.96691 22.4836 1.25995 21.8767L1.03052 21.6798L0.953145 21.6134V21.7153V28.9684C0.953145 32.0473 3.45888 34.5427 6.54919 34.5427H13.6436C16.7339 34.5427 19.2396 32.0473 19.2396 28.9684V24.0152C19.2396 20.9363 16.7339 18.4409 13.6436 18.4409H6.54919C5.04249 18.4409 3.82162 17.2244 3.82162 15.7244V11.5421C3.82162 10.9474 4.01755 10.3691 4.37934 9.89607L8.4177 4.89652L8.41771 4.89653L8.41844 4.89557L8.41952 4.89416C9.41117 3.5998 11.5125 3.46013 12.686 4.59884L12.686 4.59886L12.6862 4.59905L12.6868 4.59961L15.7632 7.6843C15.5411 7.92659 15.3013 8.20428 15.0605 8.5111C14.2001 9.60755 13.1365 11.3141 13.1365 13.2227C13.1365 15.8007 15.2312 17.8947 17.8204 17.8947C20.4096 17.8947 22.5044 15.8007 22.5044 13.2227C22.5044 11.3111 21.4326 9.60331 20.5673 8.50762C20.3256 8.20157 20.0849 7.92452 19.8618 7.68268L22.963 4.57075C22.9631 4.57065 22.9632 4.57054 22.9633 4.57044C24.0934 3.47831 26.0514 3.57946 27.0743 4.77467C27.0744 4.77483 27.0746 4.77499 27.0747 4.77516L31.2187 9.89523L31.2187 9.89524L31.2195 9.89621L31.2207 9.89758C31.632 10.3792 31.7989 11.0063 31.7989 11.6659V28.9684C31.7989 30.4684 30.578 31.6849 29.0713 31.6849H21.2492H21.2156L21.2048 31.7167L21.1728 31.8106C20.8662 32.7111 20.3875 33.5325 19.7757 34.236L19.5765 34.4651L19.509 34.5427H19.6118H29.0713C32.1617 34.5427 34.6674 32.0473 34.6674 28.9684V11.6659C34.6674 10.3507 34.2714 9.06063 33.4069 8.04741C33.4067 8.04723 33.4065 8.04705 33.4064 8.04687L29.2623 2.92667L29.2623 2.92666L29.2615 2.92572L29.2603 2.92433L29.2247 2.95476L29.2603 2.92432C27.1639 0.470045 23.2848 0.275326 20.9635 2.52161ZM17.3203 10.2713C17.487 10.0588 17.6545 9.8624 17.8135 9.68609C17.9744 9.86331 18.144 10.0609 18.3129 10.2748C19.0777 11.2432 19.6359 12.3064 19.6359 13.2227C19.6359 14.2268 18.8209 15.0369 17.8204 15.0369C16.82 15.0369 16.005 14.2268 16.005 13.2227C16.005 12.3034 16.561 11.2389 17.3203 10.2713Z" fill="white" stroke="white" stroke-width="0.0937107"/>
+        </svg>
+        <a href="#" class=""> sibo</a>
+      </div>
+
+    <div class="nav__button">
+      <button class="touch__button">Get in Touch</button>
+    </div>
+
+    </nav>
+  </div>
+
+
+  
+  <!--================ MAIN ================-->
+
+  <div class="green__background"></div>
+
+
+  <!--========== Top section ==========-->
+  <section class="top__section section">
+    <div class="top__text">
+      <h1 class="top__title">Grow your rental business with us</h1>
+      <p class="top__subtitle">By and for _ travel-tech vacation rental companies</p>
+    </div>
+
+    
+      <div class="top__container">
+        <img src="/assets/img/Stocksy_comp_1160006 1.png" alt="" class="top__img">
+        <img src="/assets/img/883505 1.png" alt="" class="top__img">
+      </div>
+  </section>
+
+  
+  <!--========== Main section ==========-->
+
+  <section class="main__section">
+    <div class="main__info">
+      <p class="all__in__one">The All-in-One</p>
+      <h3 class="main__title">Solution for Rental Operators</h3>
+      <p class="main__subtitle">Whilst you are managing the behind the scenes seamlessly, growing your portfolio, setting prices, managing bookings and operations, your guests are smoothly guided through their pre-stay journey from your customised emails to their online check in.</p>
+    </div>
+
+    <div class="main__container">
+
+      <div class="main__container-picture">
+        <div class="beige__background">
+          <img src="assets/img/Capture d'écran 2023-04-10 160451.png" alt="" class="main__container_img">
+        </div>
+      </div>
+
+      <div class="main__container-text">
+
+        <div class="main__container-top">
+          <div class="main__container-logo"></div>
+          <h4 class="main__container-title">Full property management system</h4>
+        </div>
+
+        <p class="main__container-text">Fully customisable guest journeys, dynamic pricing, task management geared to fit your needs. Create your listings, insert pictures, description, rules and any relevant information. </p>
+        <button class="main__container-button">Discover our PMS</button>
+
+      </div>
+
+    </div>
+
+    <div class="main__container">
+
+      <div class="main__container-text">
+
+        <div class="main__container-top">
+          <div class="main__container-logo"></div>
+          <h4 class="main__container-title">White label branding</h4>
+        </div>
+
+        <p class="main__container-text">Your own branded website fully integrated with a payment engine and channel manager presenting your full portfolio 
+          of properties.</p>
+          <div class="services__list">
+            <div class="services__list-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+              <p class="services__list-title">Payment</p>
+            </div>
+            <div class="services__list-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+              <p class="services__list-title">Booking request</p>
+            </div>
+            <div class="services__list-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+              <p class="services__list-title">Payment</p>
+            </div>
+            <div class="services__list-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+              <p class="services__list-title">Back office</p>
+            </div>
+          </div>
+          
+          <button class="main__container-button">Discover our creations</button>
+
+      </div>
+      
+      <div class="main__container-picture">
+        <div class="beige__background">
+          <img src="assets/img/Capture d'écran 2023-04-10 160716.png" alt="" class="main__container_img">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main__container">
+
+      <div class="main__container-picture">
+        <div class="beige__background">
+          <img src="assets/img/Capture d'écran 2023-04-10 160815.png" alt="" class="main__container_img">
+        </div>
+      </div>
+
+      <div class="main__container-text">
+
+        <div class="main__container-top">
+          <div class="main__container-logo"></div>
+          <h4 class="main__container-title">Dedicated Support Team & Expert Advice</h4>
+        </div>
+
+        <p class="main__container-text">A specialised team available to support your journey from the beginning and throughout. Training and collaboration to allow you to work independently and together with the team.</p>
+       
+        <div class="services__list">
+          <div class="services__list-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+            <p class="services__list-title">Technical support</p>
+          </div>
+          <div class="services__list-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+            <p class="services__list-title">Training</p>
+          </div>
+          <div class="services__list-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+            <p class="services__list-title">Professional advices</p>
+          </div>
+        </div>
+        <button class="main__container-button">Discover our support</button>
+        
+      </div>
+
+    </div>
+  </section>
+
+  
+  <!--========== Caroussel section ==========-->
+<section class="caroussel__section">
+  <div class="slide">
+
+    <div class="caroussel__text">
+      <p class="caroussel__title">What our customers 
+        say about us</p>
+      <p class="caroussel__subtitle">“We love working with SIBO! It is very user friendly, for both us as a user and for guests that booking online! The company is always improving their systems and are a pleasure to work with!”</p>
+    </div>
+  
+    <div class="caroussel__picture">
+      <img src="assets/img/8N5A7769-scaled 1.png" alt="">
+      <p class="caroussel__picture-title">Sara Shulman</p>
+      <p class="caroussel__picture-subtitle">Director of Operations - Israel</p>
+    </div>
+
+  </div>
+  <div class="slide">
+
+    <div class="caroussel__text">
+      <p class="caroussel__title">What our customers 
+        say about us</p>
+      <p class="caroussel__subtitle">“We love working with SIBO! It is very user friendly, for both us as a user and for guests that booking online! The company is always improving their systems and are a pleasure to work with!”</p>
+    </div>
+  
+    <div class="caroussel__picture">
+      <img src="assets/img/8N5A7769-scaled 1.png" alt="">
+      <p class="caroussel__picture-title">Sara Shulman</p>
+      <p class="caroussel__picture-subtitle">Director of Operations - Israel</p>
+    </div>
+
+  </div>
+</section>
+
+  
+  <!--========== footer section ==========-->
+
+<section class="footer">
+  <div class="footer__container grid">
+
+    <div class="footer__services">
+      <p class="footer__title">Services</p>
+        <ul class="footer__list">
+          <li class="footer__items">
+            <a href="" class="footer__link">Full PMS</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">White label branding</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Dedicated support team</a>
+          </li>
+        </ul>
+    </div>
+
+    
+    <div class="footer__Features">
+      <p class="footer__title">Features</p>
+        <ul class="footer__list">
+          <li class="footer__items">
+            <a href="" class="footer__link">Channel Management</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Customised Website & Mobile App</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Payment processing, Paylinks & Deposits</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Multi calendar</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Pricing tool</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Owner Portal</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="footer__Features">
+      <p class="footer__title-blank">test</p>
+        <ul class="footer__list">
+          <li class="footer__items">
+            <a href="" class="footer__link">Online Check-in</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Journey</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Unified Inbox</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Customizable Analytics</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">NPS and InStay reviews</a>
+          </li>
+        </ul>
+    </div>
+
+    
+    <div class="footer__Company">
+      <p class="footer__title">Company</p>
+        <ul class="footer__list">
+          <li class="footer__items">
+            <a href="" class="footer__link">About us</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Careers</a>
+          </li>
+          <li class="footer__items">
+            <a href="" class="footer__link">Blog</a>
+          </li>
+        </ul>
+    </div>
+
+    
+    <div class="footer__Contact">
+      <p class="footer__title">Contact</p>
+        <button class="footer__button-touch">Get in touch</button>
+        <button class="footer__button-quote">Get a quote</button>
+    </div>
+
+  </div>
+
+  <div class="line"></div>
+  <div class="end">
+    <div class="footer__logo">
+      <img src="/assets/img/Union1.png" alt="">
+      <a href="#" class=""> sibo</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy;2023 SIBO. All rights Reserved</p>
+      <p>Legal Mentions</p>
+      <p>Made by <U> Bruno </U></p>
+    </div>
+  </div>
+
+</section>
+  
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  const mySvg =  document.getElementById("white-svg");
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myNavbar").classList.toggle('white-nav');
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        document.getElementById("myNavbar").classList.remove('white-nav');
+      }
+    }
+  }
+  </script>
 </body>
 </html>
