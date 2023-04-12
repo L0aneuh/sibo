@@ -117,7 +117,6 @@ img {
     width: 100%;
     position: absolute;
     background: var(--olive-color);
-    z-index: var(--z-fixed);
 }
 
 .nav{
@@ -125,11 +124,65 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--olive-color);
     width: initial;
     margin-inline: 110px;
     overflow: hidden;
 }
+.nav__toggle{
+    display: flex;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-block: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+    .touch__button{
+        position: fixed;
+        top: -100%;
+        width: 327px;
+        height: 40px;
+        border-radius: 12px;
+        left: 2rem;
+    }
+    .header{
+        height: 20rem;
+    }
+
+    .nav__logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    
+    
+}
+
 
 .dropdown{
     float: left;
@@ -205,13 +258,23 @@ img {
     display: flex;
     column-gap: 1rem;
   }
+
+  
+
+  .show-menu{
+    top: 0;
+    z-index: 10000;
+  }
+  .show-menu .touch__button{
+    position: fixed;
+    top: 5rem;
+  }
   
 
 .nav__link{
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: var(--white-color);
@@ -254,6 +317,8 @@ img {
  
 
 /*========= hero Section ========*/
+
+
 
 .green__background{
     top: 0;
@@ -355,14 +420,8 @@ img {
     margin-bottom: 100px;
 }
 
-.beige__background{
-    width: 585px;
-    height: 430px;
-    background: #F4E9CC;
-    border-radius: 16px;
-}
 
-.beige__background img{
+.services__container-picture img{
     border-radius: 16px;
     width: 585px;
     height: 430px;
@@ -607,4 +666,50 @@ img {
     font-size: 20px;
     line-height: 120%;
 }
+@media screen and (max-width: 740px) {
+    .hero__text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        width: auto;
+        margin: auto;
+    }
+    .hero__title{
+        font-size: 40px;
+        line-height: 120%;
+    }
+    .hero__container{
+        grid-template-columns: repeat(1, max-content);
+        margin-top: 0;
+        row-gap: 1rem;
+    }
+    .hero__img{
+        height: 350px;
+        width: 327px;
+    }
 
+    .services__info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        width: auto;
+        margin: auto;
+    }
+
+    .services__container{
+        grid-template-columns: repeat(1, max-content);
+        justify-items: center;
+        margin-top: 2rem;
+    }
+    .services__container-picture img{
+       margin-inline: 1rem;
+       width: 327px;
+       height: 310px;
+    }
+
+    .services__container-text{
+        width: 327px;
+    }
+}

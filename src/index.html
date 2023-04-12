@@ -6,17 +6,23 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
 </head>
 <body>
+  
   <!--========== HEADER ==========-->
   <div class="header" id="myNavbar" >
 
     <nav class="nav" >
 
-      <div class="nav__menu">
-        <div class="nav__item dropdown">
+      <div class="nav__menu" id="nav-menu">
+
+        <div class="nav__item dropdown" >
           <button class="dropbtn" onclick="myFunction()">Services <span class="caret"></span></button>
           <div class="dropdown__content" id="myDropdown">
+
             <div class="nav__content-text">
               <div class="nav__content-title">
                 <div class="nav__content-logo"></div>
@@ -24,6 +30,7 @@
               </div>
               <p> Fully customisable guest journeys, dynamic pricing, task management geared to fit your needs. </p>
             </div>
+
             <div class="nav__content-text">
               <div class="nav__content-title">
                 <div class="nav__content-logo"></div>
@@ -31,6 +38,7 @@
               </div>
               <p>Your own branded website fully integrated with a payment engine and channel manager.</p>
             </div>
+
             <div class="nav__content-text">
               <div class="nav__content-title">
                 <div class="nav__content-logo"></div>
@@ -38,9 +46,11 @@
               </div>
               <p>A specialised team available to support your journey from the beginning and throughout. </p>
             </div>
+
           </div>
         </div>
-        <a href="#" class="nav__link">Pricing</a>
+
+        <a href="#" class="nav__item nav__link">Pricing</a>
         
         <div class="nav__item dropdown">
           <button class="dropbtn" onclick="myFunction()">Company <span class="caret"></span></button>
@@ -50,6 +60,13 @@
             <a href="#">Full property management system</a>
           </div>
         </div>
+        
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
       </div>
         
       <div class="nav__logo">
@@ -59,8 +76,12 @@
         <a href="#" class=""> sibo</a>
       </div>
 
-    <div class="nav__button">
-      <button class="touch__button">Get in Touch</button>
+          <div class="nav__button" id="nav-button">
+            <button class="touch__button">Get in Touch</button>
+          </div>
+
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-line"></i>
     </div>
 
     </nav>
@@ -100,9 +121,8 @@
     <div class="services__container">
 
       <div class="services__container-picture">
-        <div class="beige__background">
           <img src="assets/img/Capture d'écran 2023-04-10 160451.png" alt="" class="services__container_img">
-        </div>
+
       </div>
 
       <div class="services__container-text">
@@ -200,7 +220,7 @@
   </section>
 
   
-  <!--========== Testimonial section ==========-->
+  <!--========== Testimonial section ==========
 <section class="testimonial__section">
   <div class="slide">
 
@@ -220,7 +240,7 @@
 </section>
 
   
-  <!--========== footer section ==========-->
+  <!--========== footer section ==========-
 
 <section class="footer">
   <div class="footer__container grid">
@@ -326,7 +346,7 @@
   </div>
 
 </section>
-  
+-->
 
 <script>
   /* When the user clicks on the button, 
@@ -348,6 +368,36 @@
       }
     }
   }
+
+
+      /*=============== SHOW MENU ===============*/
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close')
+
+    /*===== MENU SHOW =====*/
+    /* Validate if constant exists */
+    if(navToggle){
+        navToggle.addEventListener('click', () =>{
+            navMenu.classList.add('show-menu');
+            navToggle.classList.add('hide');
+            document.getElementById("myNavbar").classList.toggle('white-nav');
+            document.getElementById("nav-button").classList.add('show-menu')
+
+        })
+    }
+
+    /*===== MENU HIDDEN =====*/
+    /* Validate if constant exists */
+    if(navClose){
+        navClose.addEventListener('click', () =>{
+            navMenu.classList.remove('show-menu')
+            navToggle.classList.remove('hide')
+            document.getElementById("myNavbar").classList.remove('white-nav');
+            document.getElementById("nav-button").classList.remove('show-menu')
+        })
+    }
+
   </script>
 </body>
 </html>
