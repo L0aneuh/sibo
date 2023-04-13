@@ -1,0 +1,9 @@
+.services__container--img-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .services__container--img-right img {
+    float: right;
+    margin-left: 20px; /* ajoute une marge à gauche de l'image */
+  }

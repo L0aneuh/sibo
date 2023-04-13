@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 .nav__toggle{
-    display: flex;
+    display: nonflexe;
     color: var(--white-color);
     font-size: 1.25rem;
     position: absolute;
@@ -39,7 +39,14 @@
 .hide{
     display: none;
 }
-
+@media screen and (min-width: 767px) {
+    .nav__toggle{
+        display: none;
+    }
+    .nav__close{
+        display: none;
+    }
+}
 @media screen and (max-width: 767px) {
     .nav__menu{
         position: fixed;
@@ -202,6 +209,3 @@
     
 }
 
-
-
- 

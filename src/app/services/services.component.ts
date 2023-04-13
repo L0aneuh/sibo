@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-services',
+  templateUrl: './services.component.html',
+  styleUrls: ['./services.component.css']
 })
-export class AppComponent implements OnInit {
+export class ServicesComponent {
   title = 'sibo';
   services: any[] = [
     {
@@ -34,4 +34,3 @@ export class AppComponent implements OnInit {
   }
 
 }
-

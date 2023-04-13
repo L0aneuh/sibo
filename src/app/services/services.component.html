@@ -1,0 +1,27 @@
+<section class="services__section">
+  <div class="services__info">
+    <p class="all__in__one">The All-in-One</p>
+    <h3 class="services__title">Solution for Rental Operators</h3>
+    <p class="services__subtitle">Whilst you are managing the behind the scenes seamlessly, growing your portfolio, setting prices, managing bookings and operations, your guests are smoothly guided through their pre-stay journey from your customised emails to their online check in.</p>
+  </div>
+  <div *ngFor="let service of services; let i = index" class="services__container" [ngClass]="i % 2 == 0 ? 'services__container--img-left' : 'services__container--img-right'">
+
+    <div class="services__container-picture">
+      <img src="{{ service.img }}" alt="{{ service.title }}" class="services__container_img">
+    </div>
+  
+    <div class="services__container-text">
+  
+      <div class="services__container-top">
+        <div class="services__container-logo"></div>
+        <h4 class="services__container-title">{{ service.title }}</h4>
+      </div>
+  
+      <p class="services__container-text">{{ service.description }}</p>
+      <button class="services__container-button">{{ service.buttonText }}</button>
+  
+    </div>
+  
+  </div>
+</section>
+  
