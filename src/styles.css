@@ -28,6 +28,8 @@
     --h4-font-size: 24px;
     --h5-font-size: 20px;
     --h6-font-size: 16px;
+    --h1-mobile-font-size: 40px;
+    --h2-mobile-font-size: 32px;
 
     /*========== colors ==========*/
     --olive-color: #5d750f; 
@@ -115,7 +117,6 @@ img {
 /*========= hero Section ========*/
 
 
-
 .green__background{
     top: 0;
     position: absolute;
@@ -139,7 +140,7 @@ img {
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: var(--h1-font-size);
     line-height: 110%;
     height: 124px;
     margin-bottom: 24px;
@@ -149,7 +150,7 @@ img {
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--h4-font-size);
     margin-bottom: 3rem;
 }
 
@@ -166,6 +167,8 @@ img {
     height: 603px;
     width: 585px;
 }
+
+/*========= Carousel Section ========*/
 
 .slick-prev{
     left: 25px;
@@ -188,6 +191,8 @@ img {
   }
 
 
+/*========= responsive ========*/
+
 @media screen and (max-width: 740px) {
     .hero__text{
         position: relative;
@@ -199,7 +204,7 @@ img {
         margin-left: 2rem;
     }
     .hero__title{
-        font-size: 40px;
+        font-size: var(--h1-mobile-font-size);
         line-height: 120%;
         height: auto;
     }

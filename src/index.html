@@ -32,8 +32,13 @@
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
     if (window.innerWidth > 767) {
-      document.getElementById("myNavbar").classList.toggle('white-nav');
+        if(!document.getElementById("myDropdown1").classList.contains('show')){
+          document.getElementById("myNavbar").classList.toggle('white-nav');
+        }else{
+          document.getElementById("myNavbar").classList.add('white-nav');
+        }
     }
+    document.getElementById("myDropdown1").classList.remove("show");
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -44,27 +49,39 @@
       if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
         if (window.innerWidth > 767) {
-          document.getElementById("myNavbar").classList.remove('white-nav');
+          if(!document.getElementById("myDropdown1").classList.contains('show')){
+            document.getElementById("myNavbar").classList.remove('white-nav');
+          }
       }
       }
     }
   }
+
+
+
   function myFunctionCompany() {
     document.getElementById("myDropdown1").classList.toggle("show");
     if (window.innerWidth > 767) {
-      document.getElementById("myNavbar").classList.toggle('white-nav');
+        if(!document.getElementById("myDropdown").classList.contains('show')){
+          document.getElementById("myNavbar").classList.toggle('white-nav');
+        }else{
+          document.getElementById("myNavbar").classList.add('white-nav');
+        }
     }
+    document.getElementById("myDropdown").classList.remove("show");
   }
   
   // Close the dropdown if the user clicks outside of it
 
   window.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown1");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
+    var myDropdown1 = document.getElementById("myDropdown1");
+      if (myDropdown1.classList.contains('show')) {
+        myDropdown1.classList.remove('show');
         if (window.innerWidth > 767) {
-          document.getElementById("myNavbar").classList.remove('white-nav');
+          if(document.getElementById("myDropdown").classList.contains('show')){
+            document.getElementById("myNavbar").classList.remove('white-nav');
+          }
       }
       }
     }
@@ -97,6 +114,7 @@
             navToggle.classList.remove('hide')
             document.getElementById("myNavbar").classList.remove('white-nav');
             document.getElementById("nav-button").classList.remove('show-menu')
+            document.getElementById("myDropdown").classList.remove('show')
         })
     } 
   });

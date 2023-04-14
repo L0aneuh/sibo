@@ -35,6 +35,8 @@
     display: none;
 }
 
+/*========= responsive ========*/
+
 @media screen and (min-width: 767px) {
     .nav__toggle, .nav__close{
         display: none;
@@ -86,7 +88,7 @@
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 14px;  
+    font-size: var(--small-font-size);  
     border: none;
     outline: none;
     color: var(--white-color);
@@ -134,7 +136,7 @@
     display: block;
     font-family: 'Satoshi';
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--medium-font-size);
     line-height: 110%;
   }
   .nav__content-logo{
@@ -149,7 +151,7 @@
 
   .nav__content-text p {
     color: var(--dark-grey-color);
-    font-size: 14px;
+    font-size: var(--small-font-size);
     line-height: 130%;
   }
   .show {
@@ -169,7 +171,7 @@
 
 .nav__link{
     float: left;
-    font-size: 14px;
+    font-size: var(--small-font-size);
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -200,7 +202,7 @@
     border-radius: 12px;
     padding-inline: 12.5px;
     background-color: var(--light-olive-color);
-    font-size: 14px;
+    font-size: var(--small-font-size);
     line-height: 110%;
     border: none;
     color: var(--white-color);

@@ -1,9 +1,8 @@
-
 /*========= footer Section ========*/
 .footer{
     position: absolute;
     height: 460px;
-    width: 100%;
+    width: 90%;
 }
 
 .footer__container{
@@ -17,13 +16,13 @@
 .footer__title{
     font-family: 'Satoshi';
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--big-font-size);
     line-height: 120%;
 }
 
 .footer__items{
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--small-font-size);
     line-height: 130%;
     margin-bottom: 1rem;
 }
@@ -49,7 +48,7 @@
     width: 128px;
     border-radius: 12px;
     padding-inline: 12.5px;
-    font-size: 14px;
+    font-size: var(--small-font-size);
     line-height: 110%;
     border: none;
     cursor: pointer;
@@ -103,6 +102,8 @@
 .copyright p{
     margin-right: 16px;
 }
+
+/*========= responsive ========*/
 
 @media screen and (max-width: 740px) {
     .footer{
