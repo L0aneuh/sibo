@@ -13,11 +13,21 @@
     <div class="services__container-text">
   
       <div class="services__container-top">
-        <div class="services__container-logo"></div>
+        <div class="services__container-logo">
+          <img src="{{service.logo_img}}" alt="">
+        </div>
         <h4 class="services__container-title">{{ service.title }}</h4>
       </div>
   
       <p class="services__container-text">{{ service.description }}</p>
+      <div class="services__list">
+
+        <div *ngFor="let item of service.description_list" class="services__list-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" fill="rgba(93,117,15,1)"></path></svg>
+          <p class="services__list-title">{{item}}</p>
+        </div>
+
+      </div>
       <button class="services__container-button">{{ service.buttonText }}</button>
   
     </div>

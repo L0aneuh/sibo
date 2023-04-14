@@ -76,6 +76,11 @@
   margin-right: 32px;
 }
 
+.services__container-logo img{
+  border-radius: 16px;
+  
+}
+
 
 .services__container-title{
   color: var(--black-color);

@@ -167,6 +167,25 @@ img {
     width: 585px;
 }
 
+.slick-prev{
+    left: 25px;
+}
+.slick-next{
+    right: 25px;
+}
+.slick-prev, .slick-next {
+    bottom: 10px;
+  }
+  
+  .slick-dots {
+    bottom: 10px;
+  }
+  .slick-dots li button:before {
+    color: #ccc;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #fff;
+  }
 
 
 @media screen and (max-width: 740px) {
@@ -177,10 +196,12 @@ img {
         z-index: 100;
         width: auto;
         margin: auto;
+        margin-left: 2rem;
     }
     .hero__title{
         font-size: 40px;
         line-height: 120%;
+        height: auto;
     }
     .hero__container{
         grid-template-columns: repeat(1, max-content);
@@ -192,5 +213,8 @@ img {
         width: 327px;
     }
 
+    .slick-next, .slick-prev{
+        display: none !important;
+    }
 
 }

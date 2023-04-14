@@ -2,64 +2,58 @@
 /*========== HEADER & NAV ==========*/
 
 .header{
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    position: absolute;
     background: var(--olive-color);
 }
 
 .nav{
-    height: 8.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8.2rem;
     width: initial;
     margin-inline: 110px;
     overflow: hidden;
 }
-.nav__toggle{
-    display: nonflexe;
-    color: var(--white-color);
-    font-size: 1.25rem;
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
+
+.nav__toggle, .nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.nav__close{
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
+.nav__toggle{
+    color: var(--white-color);
 }
+
 .hide{
     display: none;
 }
+
 @media screen and (min-width: 767px) {
-    .nav__toggle{
-        display: none;
-    }
-    .nav__close{
+    .nav__toggle, .nav__close{
         display: none;
     }
 }
+
 @media screen and (max-width: 767px) {
     .nav__menu{
-        position: fixed;
+        position: absolute;
         top: -100%;
         left: 0;
         width: 100%;
-        padding-block: 3.5rem;
         display: flex;
         flex-direction: column;
+        padding-block: 3.5rem;
         padding-top: 9rem;
     }
     .touch__button{
-        position: fixed;
+        position: absolute;
         top: -100%;
         width: 327px;
         height: 40px;
@@ -75,11 +69,15 @@
         top: 20px;
         left: 20px;
     }
-    
-    
+
+    .dropdown__content{
+      flex-direction: column;
+      height: auto !important;
+      border-radius: 0 !important;
+      padding-inline: 0 !important;
+    }
     
 }
-
 
 .dropdown{
     float: left;
@@ -145,6 +143,9 @@
     width: 48px;
     height: 48px;
   }
+  .nav__content-logo img{
+    border-radius: 16px;
+  }
 
   .nav__content-text p {
     color: var(--dark-grey-color);
@@ -156,14 +157,12 @@
     column-gap: 1rem;
   }
 
-  
-
   .show-menu{
     top: 0;
     z-index: 10000;
   }
   .show-menu .touch__button{
-    position: fixed;
+    position: absolute;
     top: 5rem;
   }
   

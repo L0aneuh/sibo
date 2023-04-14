@@ -7,24 +7,18 @@
 }
 
 .footer__container{
-    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
-    column-gap: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 50px;
     margin-inline: 116px;
     justify-items: center;
     margin-top: 73px;
 }
-.footer__services{
-    
-}
+
 .footer__title{
     font-family: 'Satoshi';
     font-weight: 700;
     font-size: 18px;
     line-height: 120%;
-}
-.footer__list{
-    padding-left: 0;
-   
 }
 
 .footer__items{
@@ -34,8 +28,12 @@
     margin-bottom: 1rem;
 }
 
+.footer__list{
+    padding-left: 0;
+    width: max-content;
+}
+
 .footer__link{
-    
     color: var(--dark-grey-color);
 }
 
@@ -43,22 +41,7 @@
     color: var(--white-color);
 }
 
-.footer__button-touch{
-    font-family: 'Satoshi';
-    font-weight: 700;
-    height: 40px;
-    width: 128px;
-    border-radius: 12px;
-    padding-inline: 12.5px;
-    background-color: var(--gold-color);
-    font-size: 14px;
-    line-height: 110%;
-    border: none;
-    color: var(--black-color);
-    cursor: pointer;
-    margin-bottom: 8px;
-    
-}
+.footer__button-touch,
 .footer__button-quote{
     font-family: 'Satoshi';
     font-weight: 700;
@@ -66,21 +49,30 @@
     width: 128px;
     border-radius: 12px;
     padding-inline: 12.5px;
-    background-color: var(--black-color);
     font-size: 14px;
     line-height: 110%;
     border: none;
-    color: var(--white-color);
     cursor: pointer;
     margin-bottom: 8px;
     
 }
 
+.footer__button-touch{
+    background-color: var(--gold-color);
+    color: var(--black-color);
+
+}
+
+.footer__button-quote{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
 .line{
     border: 1px solid #CDCED0;
-    margin-inline: 116px;
-    margin-top: 40px;
+    margin: 40px 116px;
 }
+
 .end{
     margin-top: 45px;
     display: flex;
@@ -89,7 +81,7 @@
 
 .footer__logo{
     display: flex;
-    margin-left: 160px;
+    margin-left: -55rem;
     align-items: center;
 }
 
@@ -103,7 +95,7 @@
 
 .copyright{
     display: flex;
-    margin-left: 303px;
+    margin-left: 40rem;
     font-size: 11px;
     line-height: 130%;
     text-align: center;
@@ -113,10 +105,13 @@
 }
 
 @media screen and (max-width: 740px) {
+    .footer{
+        height: auto;
+    }
     .footer__container{
-        grid-template-columns: repeat(1, max-content);
-        margin-inline: 0;
-        justify-items: start;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0 0 1rem;
     }
     .copyright{
         flex-direction: column;
@@ -124,10 +119,12 @@
     }
     .footer__logo{
         margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .line{
         margin-inline: 0;
-        width: 100%;
+        width: 350px;
     }
     .footer__contact button{
         display: none;
@@ -135,6 +132,9 @@
     .end{
         display: flex;
         flex-direction: column;
+    }
+    .footer__title-blank{
+        display: none;
     }
 
 }

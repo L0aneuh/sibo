@@ -60,9 +60,13 @@
     opacity: 0.7;
 }
 
+
 @media screen and (max-width: 740px) {
 .testimonial__section{
     height: 781px;
+}
+.testimonial__text{
+    margin-top: 50px;
 }
 .testimonial__title{
     font-size: 32px;

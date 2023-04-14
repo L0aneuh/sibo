@@ -8,7 +8,18 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!--=============== REMIXICONS ===============-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
+     
+
+  <!-- Add jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+
+  
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
 </head>
 <body>
 
@@ -20,8 +31,9 @@
   const mySvg =  document.getElementById("white-svg");
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-    document.getElementById("myNavbar").classList.toggle('white-nav');
-          console.log(document.getElementById('myNavbar'))
+    if (window.innerWidth > 767) {
+      document.getElementById("myNavbar").classList.toggle('white-nav');
+    }
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -31,7 +43,29 @@
     var myDropdown = document.getElementById("myDropdown");
       if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
-        document.getElementById("myNavbar").classList.remove('white-nav');
+        if (window.innerWidth > 767) {
+          document.getElementById("myNavbar").classList.remove('white-nav');
+      }
+      }
+    }
+  }
+  function myFunctionCompany() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+    if (window.innerWidth > 767) {
+      document.getElementById("myNavbar").classList.toggle('white-nav');
+    }
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown1");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        if (window.innerWidth > 767) {
+          document.getElementById("myNavbar").classList.remove('white-nav');
+      }
       }
     }
   }
@@ -44,9 +78,6 @@
           navToggle = document.getElementById('nav-toggle'),
           navClose = document.getElementById('nav-close')
 
-          console.log(document.getElementById('nav-toggle'))
-          console.log(document.getElementById('nav-menu'))
-          console.log(document.getElementById('nav-close'))
     /* Validate if constant exists */
     if(navToggle){
         navToggle.addEventListener('click', () =>{
@@ -68,6 +99,15 @@
             document.getElementById("nav-button").classList.remove('show-menu')
         })
     } 
+  });
+
+
+  /*===== Carousel =====*/
+  $(document).ready(function(){
+    $('.testimonial__section').slick({
+      dots: true,
+      arrows: true,
+    });
   });
 
   </script>
